@@ -1,0 +1,15 @@
+$class: ("margin-top", "mt"),  ("margin-bottom", "mb"),  ("padding-top", "pt"), ("padding-bottom", "pb");
+$i: 100;
+
+@mixin screen() {
+  @each $class, $item in $class {
+    @while $i > 0 {
+      .#{$item}-#{$i} {
+        #{$class}: $i#{'px'};
+      }
+      $i: $i - 10;
+    }
+  }
+}
+
+@include screen();
