@@ -1,13 +1,15 @@
+//vertical space
 $class: ("margin-top", "mt"),  ("margin-bottom", "mb"),  ("padding-top", "pt"), ("padding-bottom", "pb");
-$i: 100;
+$i: 0;
+$max: 310;
 
 @mixin screen() {
-  @each $class, $item in $class {
-    @while $i > 0 {
+  @each $prop, $item in $class {
+    @while $i < $max {
       .#{$item}-#{$i} {
-        #{$class}: $i#{'px'};
+        #{$prop}: $i#{"px"};
       }
-      $i: $i - 10;
+      $i: $i + 10;
     }
   }
 }
