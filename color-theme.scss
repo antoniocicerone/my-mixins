@@ -1,0 +1,17 @@
+//theme colors
+@mixin theme($name, $color) {
+  // Define colors in my theme
+  $primary: $color;
+  $secondary: lighten(adjust-hue($color, 30), 15%);
+  // Add elements with css
+  .#{$name} {
+    p {
+      color: $primary;
+    }
+    a {
+      background: $secondary;
+    }
+  }
+}
+// Using the theme
+@include theme(theme-antonio, red);
