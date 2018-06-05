@@ -1,4 +1,4 @@
-@mixin background-gradient($start-color, $end-color, $orientation) { 
+@mixin background-gradient($start-color, $end-color, $orientation) {
 
     background: $start-color;
 
@@ -12,7 +12,7 @@
       background: -webkit-radial-gradient(center, ellipse cover, $start-color, $end-color);
       background: radial-gradient(ellipse at center, $start-color, $end-color);
     }
-    
+
 }
  //Uso:
  //$start-color, $end-color, $orientation - vertical/horizontal/radial
