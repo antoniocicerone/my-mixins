@@ -13,6 +13,23 @@
 ///     @include responsive-type(20px, 48px);
 ///   }
 /// @site https://madebymike.com.au/writing/precise-control-responsive-typography/
+//font-size: calc( 12px + (24 - 12) * ( (100vw - 400px) / ( 800 - 400) ));
+/*
+Nota : nell'esempio sopra, 12px è la dimensione minima
+del font e 24px è il massimo. 400 px è l'inizio dell'intervallo
+di viewport e 800px è dove dovrebbe smettere di ridimensionare.
+L'inclusione o l'assenza delle unità dopo ogni valore è importante.
+
+In parole povere, è una funzione che prende un valore all'interno
+di un intervallo e determina quale sarebbe il nuovo valore se applicato
+a un intervallo diverso. Posso prendere la larghezza della finestra 
+corrente (100vw) come input in questa 'funzione'. Ad esempio, se avessi
+un intervallo di viewport da 500px a 1000px e immaginiamo che la finestra
+corrente sia 750px, la applicherò a un intervallo di dimensioni font.
+Se il mio intervallo di dimensioni del font era compreso tra 20px e 30px,
+poiché l'input di 750px è proprio nel mezzo di 500px e 1000px, anche la
+mia nuova dimensione del font sarà nel mezzo, 25px. Semplice, giusto?
+*/
 
 @mixin fluid-type($min-font-size: 12px, $max-font-size: 21px, $lower-range: 420px, $upper-range: 900px) {
 
