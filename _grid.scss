@@ -1,0 +1,18 @@
+//todo: da finire
+/* ES
+
+@include grid('grid-template-rows', '1fr 2fr', 10px, 20px);
+
+@include grid('grid-template-columns, 'repeat(3, auto)', 10px, 15px);
+
+*/
+
+
+
+@mixin grid($grid-type, $args, $row-gap, $column-gap: $row-gap) {
+  @supports (display: grid) {
+    display: grid;
+    #{$grid-type}: #{$args};
+    grid-gap: rem($row-gap) rem($column-gap);
+  }
+}
