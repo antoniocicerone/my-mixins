@@ -1,3 +1,12 @@
+/*
+example
+.foo {
+  @include ellipsis;
+}
+*/
+
+
+
 @mixin ellipsis() {
   display: inline-block;
   max-width: 100%;
@@ -5,8 +14,4 @@
   text-overflow: ellipsis;
   white-space: nowrap;
   word-wrap: normal;
-}
-
-.foo {
-  @include ellipsis;
 }

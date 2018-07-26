@@ -1,0 +1,12 @@
+/*
+example
+.rectangle {
+  @include box(100px, 50px);
+}
+*/
+
+
+@mixin box($width, $height) {
+  width: $width;
+  height: $height;
+}
