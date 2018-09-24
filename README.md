@@ -2,7 +2,7 @@
 
 Useful Sass Mixins
 
-[Guide](https://sass-lang.com/guide)
+[Guide](guide.md)
 
 ## Authors
 
