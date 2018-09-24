@@ -6,8 +6,7 @@ Useful Sass Mixins
 
 ## Authors
 
-Original author: Antonio Cicerone <antoniociceroneweb@gmail.com>
-Several other [contributors](https://github.com/antoniocicerone/my-mixins-sass/graphs/contributors) - Thank you!
+Antonio Cicerone <antoniociceroneweb@gmail.com>
 
 ## License
 
